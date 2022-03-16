@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <!--Menu de cabecera-->
+
+<header class="header">
+    <div class="menuCabecera">
+        <a href="/index.html" class="icono"><h4>Vaccination</h4></a>
+            <nav>
+                <ul class="prueba">
+                    <li><a href="#">Database</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Regulation</a></li>
+                    <li><a href="#">Hoax Buster</a></li>
+                </ul>
+            </nav>
+    </div>
+</header>
+
+<!-- Primer Seccion - Area de foto e informacion-->
+
+<section class="primerSeccion">
+    <div class="informacion">
+        <h2>Fight Virus <br> With Vaccines</h2><br>
+        <p class="normales">Let's stop this pandemic by killing virus <br> with a vaccine, don't let yourself and your <br>family get infected </p><br><br><br><br>
+        <p id="centradoAbajo"> 🛡 Best Protection   ✰ Select Vaccines</p>
+    </div>
+    <div class="fotoPrincipal">
+        <img src="images/enfermera.png" alt="fotoprincipal">
+    </div>
+</section>
+<div class="menuDesplegable">
+    <a href="javascript:abrir()">🕓 Schedule your vaccinations</a>
+</div>
+
+<script>
+    function abrir(){
+        document.getElementById("vent").style.display="block";
+    }
+    function cerrar(){
+        document.getElementById("vent").style.display="none";
+    }
+</script>
+
+
+<div class="separacion"></div>
+
+<!-- Menu flotante-->
+<div class="ventana" id="vent">
+    <div id="cerrar">
+        <a href="javascript:cerrar()"><img src="images/error.png" alt="closeWindow"></a>
+    </div>
+    <form action="#" class="schedule">
+        <label for="location" class="form">Location</label><br>
+        <input type="text" name="location" id="location" class="form2">
+
+        <label for="date" class="form">Date</label><br>
+        <input type="date" name="date" id="date" class="form1">
+
+        <label for="choices" class="form">Vaccine Type</label>
+        <input list="choices" class="form2">
+        <datalist id="choices">
+            <option value="AztraZeneca">
+            <option value="Moderna">
+            <option value="Pfizer">
+            <option value="Sinovac">
+        </datalist>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
+<section class="imagenesFondo">
+    <div class="logofondo1"><img src="images/astra-logo.png" alt="astra-logo"></div>
+    <div class="logofondo4"><img src="images/sinovac-logo.png" alt="sinovac-logo"></div>
+    <div class="logofondo3"><img src="images/pfizer-Logo.png" alt="pfizer-Logo"></div>
+    <div class="logofondo2"><img src="images/moderna-logo.png" alt="moderna-logo"></div>
+
+</section>
+
+
+<div class="separacion"></div>
+
+
+<!--Segunda Seccion-->
+
+<div class="info2">
+    <h2>Why should I vaccine?</h2><br>
+    <p>In order to avoid any doubts about getting the COVID-19 <br>vaccine, identify the following 4 benefits of COVID-19 <br>vaccination:</p>
+</div>
+
+<section class="cajas">
+    <div class="cajita"><h2><img src="images/corners.png" alt="spread" class="iconcaja"></h2><br><h2>Minimize the <br>spread of viruses</h2><br><br><p>Vaccine has been proven <br>effective to prevent someone <br>from getting infected with <br>Coronavirus</p></div>
+    <div class="cajita"><h2><img src="images/escudo.png" alt="forming" class="iconcaja"></h2><br><h2>Forming <br>antiboides</h2><br><br><p>COVID-19 vaccine proven to <br>help shape antibody <br>response for immune system</p></div>
+    <div class="cajita"><h2><img src="images/people.png" alt="protecting" class="iconcaja"></h2><br><h2>Protecting <br>people nearby</h2><br><br><p>The benefits of COVID-19 <br>vaccination are the vaccine <br>that we get can also help <br>protect people around us</p></div>
+    <div class="cajita"><h2><img src="images/grafico.png" alt="creating" class="iconcaja"></h2><br><h2>Creating group <br>immunity</h2><br><br><p>COVID-19 vaccination is also <br>beneficial for creating group <br>immunity or herd immunity</p></div>
+</section>
+
+<div class="separacion"></div>
+
+<!--Tercer Seccion-->
+<div class="info3">
+    <div class="caja33">
+        <h2>Preparations Before Vaccine</h2><br>
+        <p>The success of vaccine is strongly influenced bye the <br>strength of the body's immune system. Therefore, there are <br>several things that can be tried to make the COVID-19 <br>vaccine work:</p>
+    </div>
+</div>
+
+<section class="seccion3">
+        <div class="fotoSecundaria">
+            <img src="images/mujer2.png" alt="fotoSecundaria">
+        </div>
+        <div class="infoSeccionTres">
+            <div class="preparationBox"><a href="javascript:abrir1()">Avoid alcoholic beverages</a></div>
+            <div class="preparationBox1" id="box1"><a href="javascript:cerrar1()"><p>It is normal practice to advise patients against taking alcohol with any medication, as alcohol can react with certain medicines and worsen side-effects such as drowsiness.</p></a></div><br><br>
+
+
+            <div class="preparationBox"><a href="javascript:abrir2()">Avoid stress</a></div>
+            <div class="preparationBox2" id="box2"><a href="javascript:cerrar2()"><p>Stress has a profound effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</p></a></div><br><br>
+
+
+            <div class="preparationBox"><a href="javascript:abrir3()">Eat healthy food</a></div>
+            <div class="preparationBox3" id="box3"><a href="javascript:cerrar3()"><p>Having something nutritious in your system pre-injection can help the entire process feel a bit more bearable.</p></a></div><br><br>
+
+
+            <div class="preparationBox"><a href="javascript:abrir4()">Get enough sleep</a></div>
+            <div class="preparationBox4" id="box4"><a href="javascript:cerrar4()"><p>Flu vaccines appear to be more effective in people who get a sufficient amount of sleep during the two nights prior to receiving the shot.</p></a></div><br><br>
+
+
+            <div class="preparationBox"><a href="javascript:abrir5()">Exercise or physical activity</a></div>
+            <div class="preparationBox5" id="box5"><a href="javascript:cerrar5()"><p>A study published last year found that elite athletes had significantly more anti-influenza immune cells after a flu shot compared to other healthy adults.</p></a></div><br><br>
+
+        </div>
+
+</section>
+<script>
+    function abrir1(){
+        document.getElementById("box1").style.display="block";
+    }
+    function cerrar1(){
+        document.getElementById("box1").style.display="none";
+    }
+
+    function abrir2(){
+        document.getElementById("box2").style.display="block";
+    }
+    function cerrar2(){
+        document.getElementById("box2").style.display="none";
+    }
+
+    function abrir3(){
+        document.getElementById("box3").style.display="block";
+    }
+    function cerrar3(){
+        document.getElementById("box3").style.display="none";
+    }
+
+    function abrir4(){
+        document.getElementById("box4").style.display="block";
+    }
+    function cerrar4(){
+        document.getElementById("box4").style.display="none";
+    }
+
+    function abrir5(){
+        document.getElementById("box5").style.display="block";
+    }
+    function cerrar5(){
+        document.getElementById("box5").style.display="none";
+    }   
+</script>
+<div class="separacion"></div>
+<div class="separacion"></div>
+
+<!--Cuarta Seccion-->
+
+
+<div class="info4">
+    <h2>Emergency Contact</h2><br>
+    <p>Contact one of the contacts below if you or your family feel <br>unwell and have similar symptoms such as COVID-19, make <br>sure you also take care of yourself before reporting to us:</p>
+</div>
+
+
+<section class="seccion4">
+    
+    <div class="infoSeccionCuatro">
+        <div class="emergencyBox"><h2>Call</h2><p>021.123.145.14</p><br><br><button type="submit">Call Now</button></div>
+        <div class="emergencyBox"><h2>Chat</h2><p>021.123.145.14</p><br><br><button type="submit">Chat Now</button></div>
+        <div class="emergencyBox"><h2>Video Call</h2><p>021.123.145.14</p><br><br><button type="submit">Video Call Now</button></div>
+        <div class="emergencyBox"><h2>Message</h2><p>021.123.145.14</p><br><br><button type="submit">Message Now</button></div>
+
+    </div>
+    <div class="fotoSecundaria4">
+        <img src="images/enfermero.png" alt="fotoSecundaria">
+    </div>
+
+</section>
+<div class="separacion"></div>
+<div class="separacion"></div>
+
+
+<!--Seccion Footer-->
+
+
+<footer class="footer">
+
+    <div class="footerBox1"><a href="/index.html" class="stylefooter"><h2>Vaccination</h2></a><br><br><p>Our goal is to help the <br>world free from the <br>ongoing pandemic</p><br><br><br><br><p>@2021 Vaccination. All rights reserved</p></div>
+    <div class="footerBox2"><h2>About</h2><br><br><br><p>About Us</p><br><p>Features</p><br><p>News & Blog</p></div>
+    <div class="footerBox3"><h2>Company</h2><br><br><p>How We Work?</p><br><p>Capital</p><br><p>Security</p><br><br><br><p>Terms & Agreements</p></div>
+    <div class="footerBox4"><h2>Support</h2><br><br><br><p>FAQs</p><br><p>Support Center</p><br><p>Contact Us</p><br><br><br><p>Privacy Policy</p></div>
+
+
+
+</footer>
+
+</body>
+</html>
